@@ -24,3 +24,11 @@ git commit - record changes
 git diff - show changes between commits
 git status - lists all new or modified files to be committed
 
+Normal Workflow
+   Start in master branch (git checkout master)
+   git pull to make sure master is up-to-date (git pull)
+   create new branch and switch to it (git checkout -b <branchname>)
+   /* write some code */
+   add changes to commit (git add -p)
+   commit changes to branch (git commit -m "<description>")
+   push changes
