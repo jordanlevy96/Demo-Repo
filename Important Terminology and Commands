@@ -33,3 +33,5 @@ Normal Workflow
    commit changes to branch (git commit -m "<description>")
    push changes online, creating pull request (git push)
    review and approve pull request online, merging the branch into master
+
+   here's a new line
