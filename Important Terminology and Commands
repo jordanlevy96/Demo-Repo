@@ -31,4 +31,5 @@ Normal Workflow
    /* write some code */
    add changes to commit (git add -p)
    commit changes to branch (git commit -m "<description>")
-   push changes
+   push changes online, creating pull request (git push)
+   review and approve pull request online, merging the branch into master
