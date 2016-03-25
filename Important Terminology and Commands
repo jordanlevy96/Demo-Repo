@@ -4,12 +4,32 @@ master - main branch; always deployable
 Commit - save a set of changes in a branch
 Merge - combine changes back into another branch (usually master)
 Pull Request - request a merge from the team
+Add - commits changes to a branch
 
 git init - initialize
 git branch - show, create, delete branches
+   git branch [shows]
+   git branch <name> [creates new branch called <name>]
+   git branch -d <name> [deletes branch <name>]
 git pull - fetch from and integrate with another repository or a local branch
 git push - update remote (i.e. upload to GitHub)
 git checkout - switch branch
+   git checkout <name> [switches to branch <name>]
+   git checkout -b <name> [creates a new branch <name> and switches to it]
+git add - adds changes to a commit
+   git add <filename> [adds changed file to commit]
+   git add -p [goes through changes and let's you select what to add to commit]
 git commit - record changes
+   git commit -m "<descriptive message>" [commits file with message. Without -m flag, goes to vim for descriptive message]
 git diff - show changes between commits
 git status - lists all new or modified files to be committed
+
+Normal Workflow
+   Start in master branch (git checkout master)
+   git pull to make sure master is up-to-date (git pull)
+   create new branch and switch to it (git checkout -b <branchname>)
+   /* write some code */
+   add changes to commit (git add -p)
+   commit changes to branch (git commit -m "<description>")
+   push changes online, creating pull request (git push)
+   review and approve pull request online, merging the branch into master
