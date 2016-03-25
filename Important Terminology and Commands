@@ -1,0 +1,15 @@
+Important Terminology and Commands
+Branch - offshoot from main code; used to make changes (i.e. add features) without risking doing damage to previously working code
+master - main branch; always deployable
+Commit - save a set of changes in a branch
+Merge - combine changes back into another branch (usually master)
+Pull Request - request a merge from the team
+
+git init - initialize
+git branch - show, create, delete branches
+git pull - fetch from and integrate with another repository or a local branch
+git push - update remote (i.e. upload to GitHub)
+git checkout - switch branch
+git commit - record changes
+git diff - show changes between commits
+git status - lists all new or modified files to be committed
